@@ -12,4 +12,5 @@ common_tags = {
   Environment  = "Development"
   System = "IDP-Usecases"
 }
-
+acr_name = "anycompanyacr"
+acr_sku = "Basic"

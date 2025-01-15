@@ -55,8 +55,15 @@ variable "location" {
 }
 
 variable "cluster_upgrade_channel" {
-  description = "Cluster Upgrade Channel"
-  
+  description = "Cluster Upgrade Channel"  
+}
+
+variable "acr_name" {
+  description = "The ACR Name."  
+}
+
+variable "acr_sku" {
+  description = "The ACR sku."  
 }
 
 variable "common_tags" {
