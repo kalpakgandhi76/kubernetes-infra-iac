@@ -4,7 +4,7 @@ terraform {
     organization = "ValueMomentumInc" 
 
     workspaces { 
-      name = "kubernetes-workspace" 
+      name = "agentapi-kubernetes" 
     } 
   } 
 }

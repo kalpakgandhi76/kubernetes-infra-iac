@@ -45,8 +45,9 @@ variable "cluster_node_vm_size" {
   description = "The Cluster Node VM Size." 
 }
 
-variable "azuread_group_obejct_id" {
-  description = "The Azure AD Group object id for Authetication and Authorization" 
+variable "azuread_group_obejct_ids" {
+  type    = list(string)
+  description = "The Azure AD Group object id or service principal for Authetication and Authorization" 
 }
 
 variable "location" {
@@ -60,6 +61,11 @@ variable "cluster_upgrade_channel" {
 
 variable "acr_name" {
   description = "The ACR Name."  
+}
+
+variable "acr_resource_group_name" {
+  description = "The ACR Resource Group Name."  
+  
 }
 
 variable "acr_sku" {
